@@ -1,0 +1,19 @@
+START#You approach the door of your dead Aunts house...#Enter the house#Do not enter#ROOM1#SKIPMESSAGE2#command0
+ROOM1#Aunt Agatha sure was odd. *door slams* No! I've got no key! Let's look around.#Open blue door#Check drawers#Open red door#ROOM2#ROOM1NOTHING#DEATH#command0
+ROOM1NOTHING#Great...#Open blue door#Open red door#ROOM2#DEATH#command0
+ROOM1PT2#Finally, I found it! We should get outta here!#Try to open front door#Open blue door#Open red door#ROOM1PT3#ROOM2#DEATH#command0
+ROOM1PT3#Damn it! Wrong key!#Open blue door#Open red door#ROOM2#DEATH#command0
+ROOM2#At least I've got something to do now. A map! Interesting...#Follow map#Open green door#Stay and brush up on Russia#ROOM7#ROOM3#ROOM2NOTHING#command0
+ROOM2NOTHING#Huh, the Tsar really did have a great beard. Man, I'm hungry.#Continue reading#Open green door#Follow map#DEATH#ROOM3#ROOM7#command0
+ROOM3#A little girl's room, typical#Open purple door#Open wardrobe#Follow map#ROOM4#DEATH#ROOM7#command0
+ROOM4#Nothing! Not even a peanut!#Open fridge#Open yellow door#Follow map#DEATH#ROOM5#ROOM7#command0
+ROOM5#Okay I really need to find that key now#Check drawers#Open red door#Follow map#ROOM1PT2#DEATH#ROOM7#command0
+ROOM6#An attic. It's like she wanted me to die!#Get out of there quick#Look around#Open window#ROOM7#DEATH#DEATH#command0
+ROOM7#Will this madness ever stop?#Open attic hatch#Open red door#Open orange door#ROOM6#DEATH#ROOM9#command0
+ROOM7PT2#What the heck is that!?#Investigate the strange symbol#Open attic hatch#Open red door#ROOM8#ROOM6#DEATH#command0
+ROOM8#I'm trapped here forever. This is the end, I know it.#Open blue door 1#Open blue door 2#Open blue door 3#Open blue door 4#DEATH#DEATH#VICTORY#DEATH#command0
+ROOM9#My Aunt was a witch! Well, this explains a lot.#Open red door#Open pink door#Panic and run away!#DEATH#DEATH#ROOM7PT2#command0
+DEATH#Game over. Press mouse to play again.#SKIPMESSAGE1#command1
+VICTORY#!!! HOOray !!!!!! YOU Won !!!!!#SKIPMESSAGE1#command2
+SKIPMESSAGE1#Skip message - Restart the program#Return back to start#START#command0
+SKIPMESSAGE2#Skip message - Go back to the starting screen#Return back to start#START#command 3
